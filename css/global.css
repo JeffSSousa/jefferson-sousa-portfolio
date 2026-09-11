@@ -1,0 +1,54 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f8f6;
+    color: #171717;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+}
+
+
+/* ========================================
+   VARIABLES
+======================================== */
+
+:root {
+
+    --background: #f8f8f6;
+    --surface: #ffffff;
+
+    --text-primary: #171717;
+    --text-secondary: #666666;
+
+    --border: #dededb;
+
+    --accent: #1d4ed8;
+
+    --max-width: 1200px;
+
+    --title-size: 1.5rem;
+    --text-size: 1rem;
+    --content-size: .95rem;
+
+}

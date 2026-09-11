@@ -1,0 +1,306 @@
+/* ========================================
+   HEADER
+======================================== */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 72px;
+
+    background-color: rgba(248, 248, 246, 0.92);
+
+    border-bottom: 1px solid var(--border);
+
+    z-index: 1000;
+}
+
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.header__navbar {
+    width: min(100% - 48px, var(--max-width));
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 32px;
+}
+
+
+/* ========================================
+   LOGO
+======================================== */
+
+.header__logo {
+    font-size: var(--title-size);
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    color: var(--text-primary);
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.header__nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+
+    margin-left: auto;
+}
+
+.header__nav-links a {
+    position: relative;
+
+    font-size: var(--text-size);
+    color: var(--text-secondary);
+
+    transition: all 0.2s ease;
+}
+
+.header__nav-links a:hover {
+    color: var(--text-primary);
+    transform: translateY(-4px);
+}
+
+
+/* ========================================
+   ACTIONS
+======================================== */
+
+.header__actions {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* Language */
+
+.header__language-button {
+    padding: 0;
+
+    border: none;
+    background: none;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    color: var(--text-secondary);
+
+    transition: color 0.2s ease;
+}
+
+.header__language-button:hover {
+    color: var(--text-primary);
+}
+
+.header__language-button span {
+    margin: 0 4px;
+
+    color: var(--border);
+}
+
+
+/* CV */
+
+.header__cv-button {
+    padding: 9px 16px;
+
+    border: 1px solid var(--text-primary);
+
+    font-size: 14px;
+
+    color: var(--text-primary);
+
+    transition: all 0.2s ease;
+}
+
+.header__cv-button:hover {
+    background-color: var(--text-primary);
+    color: var(--background);
+}
+
+
+/* ========================================
+   MOBILE MENU BUTTON
+======================================== */
+
+.header__menu-button {
+    display: none;
+
+    padding: 0;
+
+    border: none;
+    background: none;
+
+    cursor: pointer;
+
+    font-size: 24px;
+
+    color: var(--text-primary);
+}
+
+.header__mobile-menu {
+    display: none;
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 900px) {
+
+    /* Navbar */
+
+    .header__navbar {
+        width: min(100% - 32px, var(--max-width));
+    }
+
+
+    /* Esconde navegação desktop */
+
+    .header__nav-links,
+    .header__actions {
+        display: none;
+    }
+
+
+    /* Menu button */
+
+    .header__menu-button {
+        display: block;
+    }
+
+
+    /* Mobile menu */
+
+    .header__mobile-menu {
+        display: block;
+
+        position: absolute;
+
+        top: 72px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 32px 16px 40px;
+
+        background-color: var(--background);
+
+        border-bottom: 1px solid var(--border);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transform: translateY(-10px);
+
+        transition:
+            opacity 0.2s ease,
+            visibility 0.2s ease,
+            transform 0.2s ease;
+    }
+
+
+    /* Menu aberto */
+
+    .header__mobile-menu.active {
+        opacity: 1;
+        visibility: visible;
+
+        transform: translateY(0);
+    }
+
+
+    /* Links */
+
+    .header__mobile-links {
+        display: flex;
+        flex-direction: column;
+
+        gap: 24px;
+    }
+
+    .header__mobile-links a {
+        font-size: 18px;
+
+        color: var(--text-primary);
+    }
+
+
+    /* Actions */
+
+    .header__mobile-actions {
+        display: flex;
+        align-items: center;
+
+        gap: 20px;
+
+        margin-top: 40px;
+
+        padding-top: 24px;
+
+        border-top: 1px solid var(--border);
+    }
+
+
+    /* Language */
+
+    .header__mobile-language {
+        padding: 0;
+
+        border: none;
+        background: none;
+
+        cursor: pointer;
+
+        font-size: 14px;
+
+        color: var(--text-secondary);
+    }
+
+    .header__mobile-language span {
+        margin: 0 4px;
+
+        color: var(--border);
+    }
+
+
+    /* CV */
+
+    .header__mobile-cv {
+        padding: 9px 16px;
+
+        border: 1px solid var(--text-primary);
+
+        font-size: 14px;
+
+        color: var(--text-primary);
+
+        transition:
+            background-color 0.2s ease,
+            color 0.2s ease;
+    }
+
+    .header__mobile-cv:hover {
+        background-color: var(--text-primary);
+
+        color: var(--background);
+    }
+
+}
