@@ -51,4 +51,6 @@ button {
     --text-size: 1rem;
     --content-size: .95rem;
 
+    --box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+
 }

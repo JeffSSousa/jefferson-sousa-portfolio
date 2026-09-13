@@ -52,10 +52,14 @@
 }
 
 .hero__content {
+    position: relative;
     z-index: 2;
-    width: 100%;
-    
-    padding-right: 5rem;
+
+    width: min(100% - 48px, var(--max-width));
+
+    margin: 0 auto;
+
+    transform: none;
 }
 
 /* ========================================
@@ -236,20 +240,23 @@
 @media (max-width: 900px) {
 
     .hero {
-        width: min(100% - 32px, var(--max-width));
-
-        min-height: auto;
+        min-height: 100vh;
 
         padding: 120px 0 64px;
 
-        grid-template-columns: 1fr;
-
-        gap: 48px;
+        align-items: center;
     }
 
     .hero__content {
-        max-width: 100%;
+        width: min(100% - 32px, var(--max-width));
+
+        padding-right: 0;
+
+        margin: 0 auto;
+
+        transform: none;
     }
+
 
     .hero__title {
         letter-spacing: -1.5px;
@@ -264,6 +271,28 @@
 
         margin: 0 auto;
     }
+
+    .hero::before {
+        content: "";
+
+        position: absolute;
+        inset: -20px;
+
+        background-image: url("../assets/images/setup.jpg");
+
+        background-size: cover;
+        background-position: center;
+
+        filter: blur(10px);
+
+        opacity: 0.15;
+
+        transform: scale(1.05);
+
+        z-index: 0;
+    }
+
+
 }
 
 
@@ -295,6 +324,10 @@
 
     .hero__button {
         padding: 10px 16px;
+    }
+
+        .hero::before {
+        background-position: center center;
     }
 
 }

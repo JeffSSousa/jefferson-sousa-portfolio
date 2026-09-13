@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Fluxo",
+        "cover": "assets/images/projects/fluxo.jpeg",
+        "categoryIds": [1],
+        "shortDescription": "Sistema de controle financeiro pessoal desenvolvido com Java e Spring Boot.",
+        "problem": "Centralizar o controle financeiro pessoal e facilitar o acompanhamento de receitas, despesas e resultados.",
+        "solution": "Desenvolvimento de uma API REST para gerenciamento de usuários, receitas, despesas e indicadores financeiros.",
+        "technologies": [
+            "Java",
+            "Spring Boot",
+            "PostgreSQL",
+            "Spring Security",
+            "JWT"
+        ],
+        "architecture": "Aplicação monolítica estruturada com arquitetura MVC e separação de responsabilidades.",
+        "decisions": [
+            "Separação entre Controllers, Services, Repositories e DTOs",
+            "Autenticação utilizando JWT",
+            "Validação das entradas da API",
+            "Tratamento centralizado de exceções"
+        ],
+        "challenges": [
+            "Modelagem das transações financeiras",
+            "Implementação da autenticação e autorização",
+            "Estruturação do projeto visando uma futura evolução arquitetural"
+        ],
+        "result": "API estruturada para gerenciamento financeiro, com documentação e organização voltadas à aplicação de boas práticas de desenvolvimento backend.",
+        "github": "https://github.com/JeffSSousa/fluxo",
+        "demo": "https://github.com/JeffSSousa/fluxo"
+    }
+    
+]

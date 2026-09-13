@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/skills.css">
+    <link rel="stylesheet" href="/css/projects.css">
     
 
 </head>
@@ -39,7 +42,7 @@
             </div>
 
                 <a
-                    href="assets/documents/cv-pt.pdf"
+                    href="assets/docs/Jefferson-Sousa-Engenheiro-Software.pdf"
                     class="header__cv-button"
                     download
                 >
@@ -178,6 +181,253 @@
             </div>
 
         </section>
+
+        <!-- Sobre -->
+
+        <section id="sobre" class="about">
+
+            <div class="about__container">
+
+                <div class="about__header">
+
+                    <p class="about__label">
+                        Sobre mim
+                    </p>
+
+                    <div class="about__tabs" role="tablist">
+
+                        <button
+                            type="button"
+                            class="about__tab active"
+                            role="tab"
+                            aria-selected="true"
+                            data-tab="professional"
+                        >
+                            Profissional
+                        </button>
+
+                        <button
+                            type="button"
+                            class="about__tab"
+                            role="tab"
+                            aria-selected="false"
+                            data-tab="personal"
+                        >
+                            Além do código
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about__content">
+
+                    <div class="about__image">
+
+                        <img
+                            src="assets/images/perfil.png"
+                            alt="Jefferson Sousa"
+                        >
+
+                    </div>
+
+
+                    <div class="about__text">
+
+                        <!-- Conteúdo Profissional -->
+
+                        <div
+                            class="about__panel active"
+                            data-panel="professional"
+                            role="tabpanel"
+                        >
+
+                            <h2 class="about__title">
+                                Desenvolvedor focado em construir sistemas sólidos.
+                            </h2>
+
+                            <p class="about__description">
+                                Sou desenvolvedor backend com foco em Java e Spring Boot.
+                                Gosto de entender como os sistemas funcionam por trás
+                                das interfaces e transformar regras de negócio em
+                                soluções bem estruturadas, seguras e fáceis de evoluir.
+                            </p>
+
+                            <p class="about__description">
+                                Tenho interesse em arquitetura de software, APIs,
+                                bancos de dados, segurança e cloud, buscando aplicar
+                                boas práticas de engenharia nos projetos que desenvolvo.
+                            </p>
+
+                            <p class="about__description">
+                                Atualmente, continuo aprofundando meus conhecimentos
+                                em backend e arquitetura por meio de estudos e projetos
+                                próprios.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Conteúdo Além do código -->
+
+                        <div
+                            class="about__panel"
+                            data-panel="personal"
+                            role="tabpanel"
+                            hidden
+                        >
+
+                            <h2 class="about__title">
+                                Além do código, existem outras coisas que me movem.
+                            </h2>
+
+                            <p class="about__description">
+                                Fora do desenvolvimento, gosto de tecnologia, Fórmula 1,
+                                academia e leitura. São interesses que fazem parte da
+                                minha rotina e também despertam minha curiosidade
+                                constantemente.
+                            </p>
+
+                            <p class="about__description">
+                                Gosto de aprender coisas novas e transformar ideias em
+                                projetos práticos, mesmo quando não estão diretamente
+                                relacionados ao trabalho.
+                            </p>
+
+                            <p class="about__description">
+                                Acredito que curiosidade e aprendizado contínuo são
+                                importantes tanto para evoluir como desenvolvedor
+                                quanto como pessoa.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Skills -->
+
+        <section id="skills" class="skills">
+
+            <div class="skills__container">
+
+                <div class="skills__header">
+
+                    <p class="skills__label">
+                        Skills
+                    </p>
+
+                    <h2 class="skills__title">
+                        Tecnologias que utilizo para construir sistemas.
+                    </h2>
+
+                </div>
+
+
+                <div
+                    class="skills__categories"
+                    role="tablist"
+                    aria-label="Categorias de skills"
+                >
+
+                    <!--
+                        As categorias serão geradas
+                        pelo skills.js a partir do JSON.
+                    -->
+
+                </div>
+
+
+                <div
+                    class="skills__content"
+                    role="tabpanel"
+                >
+
+                    <!--
+                        Os cards das tecnologias serão
+                        gerados pelo skills.js.
+                    -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="projetos" class="projects">
+
+            <div class="projects__container">
+
+                <div class="projects__header">
+
+                    <p class="projects__label">
+                        Projetos
+                    </p>
+
+                    <h2 class="projects__title">
+                        Sistemas que desenvolvi na prática.
+                    </h2>
+
+                    <p class="projects__description">
+                        Projetos desenvolvidos para aplicar conceitos de
+                        desenvolvimento backend, arquitetura e engenharia de software.
+                    </p>
+
+                </div>
+
+                <div
+                    class="projects__categories"
+                    role="tablist"
+                    aria-label="Categorias de projetos"
+                >
+                    <!-- Categorias geradas pelo projects.js -->
+                </div>
+
+                <div
+                    class="projects__content"
+                    role="tabpanel"
+                >
+                    <!-- Projetos gerados pelo projects.js -->
+                </div>
+
+            </div>
+
+            <div
+                class="projects__modal"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="projects-modal-title"
+                hidden
+            >
+
+                <div class="projects__modal-overlay"></div>
+
+                <div class="projects__modal-content">
+
+                    <button
+                        type="button"
+                        class="projects__modal-close"
+                        aria-label="Fechar detalhes do projeto"
+                    >
+                        ×
+                    </button>
+
+                    <div class="projects__modal-body">
+                        <!-- Conteúdo gerado pelo projects.js -->
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
 
     </main>    
 

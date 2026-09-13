@@ -1,0 +1,335 @@
+
+/* ========================================
+   ABOUT
+======================================== */
+
+.about {
+    width: 100%;
+
+    padding: 120px 0;
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.about__container {
+    width: min(100% - 48px, var(--max-width));
+
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.about__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 64px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+/* ========================================
+   LABEL
+======================================== */
+
+.about__label {
+    margin: 0;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: var(--text-secondary);
+}
+
+
+/* ========================================
+   TABS
+======================================== */
+
+.about__tabs {
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+}
+
+.about__tab {
+    position: relative;
+
+    padding: 0 0 8px;
+
+    border: none;
+    background: none;
+
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+
+    color: var(--text-secondary);
+
+    transition: all 0.2s ease;
+}
+
+.about__tab:hover {
+    color: var(--text-primary);
+}
+
+.about__tab.active {
+    color: var(--text-primary);
+}
+
+
+/* Active indicator */
+
+.about__tab.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: var(--text-primary);
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.about__content {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+
+    align-items: center;
+
+    gap: 96px;
+}
+
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.about__image {
+    width: 100%;
+
+    padding: 10px 10px 42px;
+
+    overflow: hidden;
+
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+
+    box-shadow: var(--box-shadow);
+
+    border-radius: 6px;
+
+    box-sizing: border-box;
+}
+
+.about__image img {
+
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+
+    border-radius: 3px;
+}
+
+
+/* ========================================
+   TEXT
+======================================== */
+
+.about__text {
+    max-width: 620px;
+}
+
+
+/* ========================================
+   PANEL
+======================================== */
+
+.about__panel {
+    animation: aboutFade 0.25s ease;
+}
+
+.about__panel[hidden] {
+    display: none;
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.about__title {
+    max-width: 600px;
+
+    margin-bottom: 28px;
+
+    font-size: clamp(30px, 4vw, 46px);
+    font-weight: 500;
+
+    line-height: 1.15;
+    letter-spacing: -1px;
+
+    color: var(--text-primary);
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.about__description {
+    max-width: 580px;
+
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: var(--text-secondary);
+}
+
+.about__description:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ========================================
+   ANIMATION
+======================================== */
+
+@keyframes aboutFade {
+
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .about {
+        padding: 96px 0;
+    }
+
+    .about__header {
+        margin-bottom: 48px;
+    }
+
+    .about__content {
+        grid-template-columns: 300px 1fr;
+
+        gap: 48px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .about {
+        padding: 80px 0;
+    }
+
+    .about__container {
+        width: min(100% - 32px, var(--max-width));
+    }
+
+    .about__header {
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 24px;
+
+        margin-bottom: 40px;
+    }
+
+    .about__tabs {
+        gap: 24px;
+    }
+
+    .about__content {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .about__image {
+        max-width: 360px;
+    }
+
+    .about__text {
+        max-width: 100%;
+    }
+
+    .about__title {
+        font-size: 32px;
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+
+    .about__image {
+        max-width: 100%;
+    }
+
+    .about__title {
+        font-size: 29px;
+    }
+
+    .about__description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+}

@@ -1,0 +1,304 @@
+
+/* ========================================
+   SKILLS
+======================================== */
+
+.skills {
+    width: 100%;
+
+    padding: 120px 0;
+
+    background-color: var(--surface);
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.skills__container {
+    width: min(100% - 48px, var(--max-width));
+
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.skills__header {
+
+    margin-bottom: 56px;
+}
+
+
+/* ========================================
+   LABEL
+======================================== */
+
+.skills__label {
+    margin-bottom: 14px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    margin-bottom: 32px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid var(--border);
+
+    color: var(--text-secondary);
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.skills__title {
+    max-width: 650px;
+
+    font-size: clamp(32px, 4vw, 46px);
+    font-weight: 500;
+
+    line-height: 1.15;
+    letter-spacing: -1px;
+
+    color: var(--text-primary);
+}
+
+
+/* ========================================
+   CATEGORIES
+======================================== */
+
+.skills__categories {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 36px;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+}
+
+.skills__categories::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* ========================================
+   CATEGORY BUTTON
+======================================== */
+
+.skills__category {
+    flex-shrink: 0;
+
+    padding: 10px 16px;
+
+    border: 1px solid var(--border);
+    border-radius: 6px;
+
+    background-color: transparent;
+
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+
+    color: var(--text-secondary);
+
+    transition: all 0.2s ease;
+}
+
+.skills__category:hover {
+    color: var(--text-primary);
+
+    border-color: var(--text-secondary);
+}
+
+.skills__category.active {
+    background-color: var(--text-primary);
+
+    border-color: var(--text-primary);
+
+    color: var(--background);
+}
+
+
+/* ========================================
+   SKILLS CONTENT
+======================================== */
+
+.skills__content {
+    display: grid;
+
+    grid-template-columns: repeat(4, 180px);
+
+    gap: 16px;
+}
+
+
+/* ========================================
+   SKILL CARD
+======================================== */
+
+.skills__card {
+    width: 180px;
+    aspect-ratio: 1 / 1;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    background-color: rgba(241, 241, 238, 0.4);
+
+    border: 1px solid rgba(222, 222, 219, 0.8);
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    transition: all 0.2s ease;
+}
+
+.skills__card:hover {
+    transform: translateY(-3px);
+
+    border-color: var(--border);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ========================================
+   SKILL ICON
+======================================== */
+
+.skills__card img {
+    width: 90px;
+    height: 90px;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* ========================================
+   SKILL NAME
+======================================== */
+
+.skills__card span {
+    position: relative;
+
+    width: 100%;
+    padding-top: 10px;
+
+    text-align: center;
+
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.skills__card span::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 1%;
+    right: 1%;
+
+    height: 1px;
+
+    background-color: var(--border);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .skills__content {
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .skills {
+        padding: 96px 0;
+    }
+
+    .skills__container {
+        width: min(100% - 32px, var(--max-width));
+    }
+
+    .skills__header {
+        margin-bottom: 40px;
+    }
+
+    .skills__categories {
+        margin-bottom: 28px;
+    }
+
+    .skills__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills__card {
+        width: 100%;
+        max-width: 180px;
+        justify-self: center;
+
+        justify-content: space-between;
+    }
+
+    .skills__card img {
+        width: 64px;
+        height: 64px;
+    }
+    
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+
+    .skills__title {
+        font-size: 30px;
+    }
+
+
+    .skills__card span {
+        font-size: 14px;
+    }
+
+}

@@ -1,0 +1,95 @@
+[
+    {
+        "id": 1,
+        "name": "Java",
+        "icon": "java",
+        "categoryId": 1
+    },
+    {
+        "id": 2,
+        "name": "Spring Boot",
+        "icon": "spring-boot",
+        "categoryId": 1
+    },
+    {
+        "id": 3,
+        "name": "Spring Security",
+        "icon": "spring-security",
+        "categoryId": 1
+    },
+    {
+        "id": 4,
+        "name": "JPA / Hibernate",
+        "icon": "hibernate",
+        "categoryId": 1
+    },
+
+    {
+        "id": 5,
+        "name": "PostgreSQL",
+        "icon": "postgresql",
+        "categoryId": 2
+    },
+    {
+        "id": 6,
+        "name": "MySQL",
+        "icon": "mysql",
+        "categoryId": 2
+    },
+    {
+        "id": 7,
+        "name": "MongoDB",
+        "icon": "mongodb",
+        "categoryId": 2
+    },
+
+    {
+        "id": 8,
+        "name": "AWS",
+        "icon": "aws",
+        "categoryId": 3
+    },
+    {
+        "id": 9,
+        "name": "Docker",
+        "icon": "docker",
+        "categoryId": 3
+    },
+    {
+        "id": 10,
+        "name": "Git",
+        "icon": "git",
+        "categoryId": 3
+    },
+    {
+        "id": 11,
+        "name": "GitHub Actions",
+        "icon": "github-actions",
+        "categoryId": 3
+    },
+
+    {
+        "id": 12,
+        "name": "Clean Code",
+        "icon": "clean-code",
+        "categoryId": 4
+    },
+    {
+        "id": 13,
+        "name": "API Design",
+        "icon": "api-design",
+        "categoryId": 4
+    },
+    {
+        "id": 14,
+        "name": "Testes Unitários",
+        "icon": "testing",
+        "categoryId": 4
+    },
+    {
+        "id": 15,
+        "name": "Arquitetura de Software",
+        "icon": "architecture",
+        "categoryId": 4
+    }
+]
