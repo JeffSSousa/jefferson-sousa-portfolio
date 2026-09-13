@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "company": "Freelancer",
+        "role": "Desenvolvedor Backend Java",
+        "startDate": "01/2026",
+        "endDate": "Atual",
+        "description": "Desenvolvimento de sistemas backend utilizando Java e Spring Boot, com foco em regras de negócio, APIs REST e organização arquitetural.",
+        "activities": [
+            "Desenvolvimento de APIs REST com Spring Boot",
+            "Modelagem e integração com banco de dados",
+            "Implementação de regras de negócio",
+            "Aplicação de boas práticas de desenvolvimento e arquitetura"
+        ],
+        "technologies": [
+            "Java",
+            "Spring Boot",
+            "PostgreSQL"
+        ]
+    },
+    {
+        "id": 2,
+        "company": "Wrapper Sistemas — Grupo GPS",
+        "role": "Desenvolvedor Java",
+        "startDate": "11/2025",
+        "endDate": "11/2025",
+        "description": "Desenvolvimento de soluções utilizando Java e Spring Boot integradas a serviços e ferramentas externas.",
+        "activities": [
+            "Desenvolvimento de aplicações com Java e Spring Boot",
+            "Integração com APIs externas",
+            "Integração com WhatsApp através da Meta API",
+            "Utilização de bancos de dados relacionais e NoSQL"
+        ],
+        "technologies": [
+            "Java",
+            "Spring Boot",
+            "PostgreSQL",
+            "MongoDB",
+            "Meta API",
+            "n8n",
+            "Chatwoot"
+        ]
+    },
+    {
+        "id": 3,
+        "company": "Freelancer",
+        "role": "Desenvolvedor Java & WordPress",
+        "startDate": "09/2024",
+        "endDate": "Atual",
+        "description": "Desenvolvimento de soluções web e automações utilizando Java, WordPress e diferentes tecnologias de banco de dados.",
+        "activities": [
+            "Desenvolvimento e manutenção de aplicações web",
+            "Desenvolvimento de automações utilizando Java",
+            "Desenvolvimento de soluções com Spring Boot",
+            "Desenvolvimento e manutenção de lojas virtuais em WordPress"
+        ],
+        "technologies": [
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "MongoDB",
+            "WordPress"
+        ]
+    },
+    {
+        "id": 4,
+        "company": "Sobel Suprema",
+        "role": "Analista de Logística",
+        "startDate": "07/2021",
+        "endDate": "01/2025",
+        "description": "Atuação na área de logística com foco em controle operacional, organização de processos e análise de informações.",
+        "activities": [
+            "Acompanhamento de operações logísticas",
+            "Controle de processos e indicadores",
+            "Organização e análise de informações operacionais",
+            "Suporte à tomada de decisões"
+        ],
+        "technologies": []
+    }
+]
