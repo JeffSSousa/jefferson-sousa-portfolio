@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "institution": "Faculdade Impacta Tecnologia",
+        "course": "Sistemas de Informação",
+        "degree": "Bacharelado",
+        "startDate": "2024",
+        "endDate": "2027",
+        "status": "Em andamento",
+        "logo": "assets/images/educations/certifications/AWS-CLF-02.png",
+        "description": "Bacharelado na area de tecnologia evolução em engenharia e arquitetura de sistemas"
+    }
+]

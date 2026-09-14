@@ -7,89 +7,176 @@
     },
     {
         "id": 2,
+        "name": "JavaScript",
+        "icon": "javascript",
+        "categoryId": 1
+    },
+    {
+        "id": 3,
+        "name": "HTML",
+        "icon": "html",
+        "categoryId": 1
+    },
+    {
+        "id": 4,
+        "name": "CSS",
+        "icon": "css",
+        "categoryId": 1
+    },
+    {
+        "id": 6,
         "name": "Spring Boot",
         "icon": "spring-boot",
         "categoryId": 1
     },
     {
-        "id": 3,
-        "name": "Spring Security",
-        "icon": "spring-security",
-        "categoryId": 1
-    },
-    {
-        "id": 4,
-        "name": "JPA / Hibernate",
-        "icon": "hibernate",
-        "categoryId": 1
-    },
-
-    {
-        "id": 5,
-        "name": "PostgreSQL",
-        "icon": "postgresql",
-        "categoryId": 2
-    },
-    {
-        "id": 6,
-        "name": "MySQL",
-        "icon": "mysql",
-        "categoryId": 2
-    },
-    {
         "id": 7,
-        "name": "MongoDB",
-        "icon": "mongodb",
-        "categoryId": 2
-    },
-
-    {
-        "id": 8,
-        "name": "AWS",
-        "icon": "aws",
-        "categoryId": 3
-    },
-    {
-        "id": 9,
-        "name": "Docker",
-        "icon": "docker",
-        "categoryId": 3
+        "name": "Spring Data JPA",
+        "icon": "spring-data-jpa",
+        "categoryId": 1
     },
     {
         "id": 10,
-        "name": "Git",
-        "icon": "git",
-        "categoryId": 3
+        "name": "Apache Kafka",
+        "icon": "kafka",
+        "categoryId": 2
     },
     {
         "id": 11,
-        "name": "GitHub Actions",
-        "icon": "github-actions",
-        "categoryId": 3
+        "name": "Spring Security",
+        "icon": "spring-security",
+        "categoryId": 2
     },
-
     {
         "id": 12,
-        "name": "Clean Code",
-        "icon": "clean-code",
-        "categoryId": 4
+        "name": "JWT",
+        "icon": "jwt",
+        "categoryId": 2
     },
     {
         "id": 13,
-        "name": "API Design",
-        "icon": "api-design",
-        "categoryId": 4
+        "name": "OAuth2",
+        "icon": "oauth2",
+        "categoryId": 2
     },
     {
         "id": 14,
-        "name": "Testes Unitários",
-        "icon": "testing",
-        "categoryId": 4
+        "name": "MySQL",
+        "icon": "mysql",
+        "categoryId": 3
     },
     {
         "id": 15,
-        "name": "Arquitetura de Software",
-        "icon": "architecture",
+        "name": "PostgreSQL",
+        "icon": "postgresql",
+        "categoryId": 3
+    },
+    {
+        "id": 16,
+        "name": "MongoDB",
+        "icon": "mongodb",
+        "categoryId": 3
+    },
+    {
+        "id": 17,
+        "name": "JUnit 5",
+        "icon": "junit",
         "categoryId": 4
+    },
+    {
+        "id": 18,
+        "name": "Mockito",
+        "icon": "mockito",
+        "categoryId": 4
+    },
+    {
+        "id": 19,
+        "name": "Amazon EC2",
+        "icon": "ec2",
+        "categoryId": 5
+    },
+    {
+        "id": 20,
+        "name": "Amazon S3",
+        "icon": "s3",
+        "categoryId": 5
+    },
+    {
+        "id": 21,
+        "name": "AWS IAM",
+        "icon": "iam",
+        "categoryId": 5
+    },
+    {
+        "id": 22,
+        "name": "Docker",
+        "icon": "docker",
+        "categoryId": 5
+    },
+    {
+        "id": 23,
+        "name": "GitHub Actions",
+        "icon": "github-actions",
+        "categoryId": 5
+    },
+    {
+        "id": 25,
+        "name": "Git",
+        "icon": "git",
+        "categoryId": 6
+    },
+    {
+        "id": 27,
+        "name": "Maven",
+        "icon": "maven",
+        "categoryId": 6
+    },
+    {
+        "id": 28,
+        "name": "Swagger / OpenAPI",
+        "icon": "swagger",
+        "categoryId": 6
+    },
+    {
+        "id": 29,
+        "name": "Postman",
+        "icon": "postman",
+        "categoryId": 6
+    },
+    {
+        "id": 30,
+        "name": "Clean Code",
+        "icon": "config",
+        "categoryId": 7
+    },
+    {
+        "id": 31,
+        "name": "SOLID",
+        "icon": "config",
+        "categoryId": 7
+    },
+    {
+        "id": 32,
+        "name": "Design Patterns",
+        "icon": "config",
+        "categoryId": 7
+    },
+    {
+        "id": 33,
+        "name": "Arquitetura de Software",
+        "icon": "config",
+        "categoryId": 7
+    },
+    {
+        "id": 34,
+        "name": "Microsserviços",
+        "icon": "config",
+        "categoryId": 7
+    },
+    {
+        "id": 35,
+        "name": "MVC",
+        "icon": "config",
+        "categoryId": 7
     }
 ]

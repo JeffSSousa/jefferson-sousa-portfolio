@@ -5,14 +5,26 @@
     },
     {
         "id": 2,
-        "name": "Banco de Dados"
+        "name": "Mensageria & Segurança"
     },
     {
         "id": 3,
-        "name": "Cloud & DevOps"
+        "name": "Banco de Dados"
     },
     {
         "id": 4,
+        "name": "Testes"
+    },
+    {
+        "id": 5,
+        "name": "Cloud & DevOps"
+    },
+    {
+        "id": 6,
+        "name": "Ferramentas"
+    },
+    {
+        "id": 7,
         "name": "Engenharia de Software"
     }
 ]

@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "name": "Nome do curso",
+        "institution": "Udemy",
+        "completionDate": "2026",
+        "logo": "assets/images/educations/certifications/AWS-CLF-02.png",
+        "description": "",
+        "technologies": ["Java","Spring boot"]
+    }
+]

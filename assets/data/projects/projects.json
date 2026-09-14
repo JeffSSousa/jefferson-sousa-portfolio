@@ -4,31 +4,141 @@
         "name": "Fluxo",
         "cover": "assets/images/projects/fluxo.jpeg",
         "categoryIds": [1],
-        "shortDescription": "Sistema de controle financeiro pessoal desenvolvido com Java e Spring Boot.",
-        "problem": "Centralizar o controle financeiro pessoal e facilitar o acompanhamento de receitas, despesas e resultados.",
-        "solution": "Desenvolvimento de uma API REST para gerenciamento de usuários, receitas, despesas e indicadores financeiros.",
+        "shortDescription": "Plataforma de gerenciamento financeiro pessoal desenvolvida com Java e Spring Boot, com foco em segurança, testes e evolução arquitetural.",
+        "problem": "Facilitar a organização e o controle das finanças pessoais, centralizando receitas, despesas, transações e indicadores financeiros em uma única aplicação.",
+        "solution": "Desenvolvimento de uma API REST para gerenciamento financeiro, usuários e categorias, com autenticação, validação de dados e organização da aplicação baseada em domínios de negócio.",
         "technologies": [
-            "Java",
-            "Spring Boot",
-            "PostgreSQL",
+            "Java 21",
             "Spring Security",
-            "JWT"
+            "PostgreSQL",
+            "Package-by-Feature"
         ],
-        "architecture": "Aplicação monolítica estruturada com arquitetura MVC e separação de responsabilidades.",
+        "architecture": "Aplicação estruturada como um modular monolith utilizando Package-by-Feature, organizando o código por funcionalidades e limites de domínio para facilitar manutenção e evolução.",
         "decisions": [
-            "Separação entre Controllers, Services, Repositories e DTOs",
-            "Autenticação utilizando JWT",
+            "Organização da aplicação baseada em funcionalidades de negócio",
+            "Separação de responsabilidades dentro de cada domínio",
+            "Autenticação e autorização utilizando Spring Security e JWT",
+            "Utilização de DTOs e MapStruct para transferência e mapeamento de dados",
             "Validação das entradas da API",
-            "Tratamento centralizado de exceções"
+            "Tratamento centralizado de exceções",
+            "Implementação de testes unitários com JUnit 5 e Mockito",
+            "Documentação da API utilizando Swagger / OpenAPI"
         ],
         "challenges": [
-            "Modelagem das transações financeiras",
-            "Implementação da autenticação e autorização",
-            "Estruturação do projeto visando uma futura evolução arquitetural"
+            "Estruturar o sistema considerando limites claros entre os domínios de negócio",
+            "Implementar autenticação e autorização de forma segura",
+            "Modelar as regras relacionadas ao gerenciamento financeiro",
+            "Evoluir a arquitetura de um modelo tradicional para uma estrutura baseada em funcionalidades",
+            "Manter o projeto preparado para uma possível evolução futura para microsserviços"
         ],
-        "result": "API estruturada para gerenciamento financeiro, com documentação e organização voltadas à aplicação de boas práticas de desenvolvimento backend.",
-        "github": "https://github.com/JeffSSousa/fluxo",
-        "demo": "https://github.com/JeffSSousa/fluxo"
+        "result": "Aplicação backend estruturada como um modular monolith, com funcionalidades de gerenciamento financeiro, autenticação, testes automatizados e documentação da API, preparada para evolução arquitetural.",
+        "github": "https://github.com/JeffSSousa/Fluxo-Financeiro",
+        "demo": null
+    },
+    {
+        "id": 2,
+        "name": "SmartStock",
+        "cover": "assets/images/projects/smartstock.jpeg",
+        "categoryIds": [1],
+        "shortDescription": "API REST para gerenciamento de estoque, desenvolvida com Java e Spring Boot, com foco em rastreabilidade e controle operacional.",
+        "problem": "Centralizar o controle de estoque e reduzir erros operacionais relacionados ao gerenciamento de produtos, posições físicas e movimentações.",
+        "solution": "Desenvolvimento de uma API REST para gerenciamento de produtos, categorias, endereços de estoque e movimentações, permitindo acompanhar o histórico das operações e identificar produtos com baixo estoque.",
+        "technologies": [
+            "Java 21",
+            "MySQL",
+            "Bean Validation",
+            "Swagger / OpenAPI"
+        ],
+        "architecture": "Aplicação backend desenvolvida com Spring Boot e organizada para separar responsabilidades entre as diferentes partes da aplicação.",
+        "decisions": [
+            "Desenvolvimento de uma API REST para gerenciamento do estoque",
+            "Utilização de Spring Data JPA para persistência",
+            "Utilização de DTOs para comunicação da API",
+            "Documentação e teste dos endpoints utilizando Swagger / OpenAPI e Postman",
+            "Implementação de testes unitários com JUnit 5 e Mockito",
+            "Utilização de H2 para testes e MySQL como banco de dados relacional"
+        ],
+        "challenges": [
+            "Modelar os endereços físicos de estoque e seus estados de ocupação",
+            "Garantir a rastreabilidade das entradas e saídas de produtos",
+            "Estruturar o histórico das movimentações",
+            "Implementar o monitoramento de níveis de estoque",
+            "Garantir a consistência das operações de movimentação"
+        ],
+        "result": "API REST para gerenciamento de estoque com controle de produtos, categorias, endereços, movimentações e histórico operacional, permitindo maior controle e rastreabilidade das operações.",
+        "github": "https://github.com/JeffSSousa/Smart-Stock",
+        "demo": null
+    },
+    {
+        "id": 3,
+        "name": "Order Management System",
+        "cover": "assets/images/projects/order-management.jpeg",
+        "categoryIds": [1, 3],
+        "shortDescription": "Sistema de gerenciamento de pedidos baseado em microsserviços e arquitetura orientada a eventos.",
+        "problem": "Explorar a construção de uma arquitetura distribuída para processamento de pedidos utilizando comunicação assíncrona e eventos de negócio.",
+        "solution": "Desenvolvimento de um sistema baseado em microsserviços no qual o ciclo de vida do pedido é conduzido por eventos publicados e consumidos através do Apache Kafka.",
+        "technologies": [
+            "Java 21",
+            "Spring Boot",
+            "PostgreSQL",
+            "Apache Kafka",
+            "Microsserviços"
+        ],
+        "architecture": "Arquitetura distribuída baseada em microsserviços e comunicação assíncrona orientada a eventos, utilizando Apache Kafka para publicação e consumo dos eventos do ciclo de vida dos pedidos.",
+        "decisions": [
+            "Separação do sistema em serviços independentes",
+            "Utilização de eventos para comunicação entre os serviços",
+            "Processamento assíncrono através do Apache Kafka",
+            "Modelagem do ciclo de vida do pedido através de eventos de negócio",
+            "Definição de um fluxo de eventos para representar as etapas do pedido"
+        ],
+        "challenges": [
+            "Compreender a comunicação assíncrona entre microsserviços",
+            "Modelar o fluxo de eventos do ciclo de vida de um pedido",
+            "Definir responsabilidades entre os serviços",
+            "Trabalhar com publicação e consumo de eventos utilizando Apache Kafka",
+            "Compreender os impactos de uma arquitetura distribuída em relação a uma aplicação monolítica"
+        ],
+        "result": "Sistema de estudo desenvolvido para aprofundar conhecimentos em microsserviços, Apache Kafka e arquitetura orientada a eventos, com fluxo de processamento baseado em eventos de negócio.",
+        "github": "https://github.com/JeffSSousa/mini-ecommerce-kafka",
+        "demo": null
+    },
+
+    {
+        "id": 4,
+        "name": "Doctors Appointment",
+        "cover": "assets/images/projects/doctors-appointment.jpeg",
+        "categoryIds": [1],
+        "shortDescription": "API REST para gerenciamento de consultas médicas, com autenticação, autorização e validação de regras de negócio.",
+        "problem": "Organizar o cadastro de médicos, pacientes e consultas, garantindo integridade dos agendamentos e evitando conflitos de horários.",
+        "solution": "Desenvolvimento de uma API REST para gerenciamento de médicos, pacientes e consultas, com validação das regras de negócio, autenticação e autorização dos usuários.",
+        "technologies": [
+            "Java 21",
+            "PostgreSQL",
+            "OAuth2",
+            "Hypersistence Utils",
+            "Docker"
+        ],
+        "architecture": "Aplicação backend desenvolvida com Spring Boot, organizada em camadas de responsabilidade e preparada para execução através de containers utilizando Docker.",
+        "decisions": [
+            "Desenvolvimento de uma API REST para gerenciamento de consultas",
+            "Implementação de autenticação e autorização utilizando Spring Security",
+            "Autenticação social utilizando OAuth2 com Google",
+            "Utilização de MapStruct para mapeamento entre entidades e DTOs",
+            "Validação das regras de negócio relacionadas aos agendamentos",
+            "Implementação de testes unitários com JUnit 5 e Mockito",
+            "Utilização de PostgreSQL como banco de dados principal",
+            "Containerização da aplicação e banco utilizando Docker Compose"
+        ],
+        "challenges": [
+            "Implementar regras para impedir conflitos de horários entre consultas",
+            "Garantir a consistência dos agendamentos",
+            "Implementar autenticação e autorização",
+            "Integrar autenticação social utilizando OAuth2",
+            "Estruturar o ambiente da aplicação utilizando Docker e Docker Compose"
+        ],
+        "result": "API REST para gerenciamento de consultas médicas com controle de médicos, pacientes e agendamentos, incluindo autenticação, autorização, validação das regras de negócio e ambiente containerizado.",
+        "github": "https://github.com/JeffSSousa/doctors-appointment",
+        "demo": null
     }
-    
 ]

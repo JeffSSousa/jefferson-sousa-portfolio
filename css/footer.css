@@ -1,0 +1,120 @@
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    border-top: 1px solid var(--border);
+    background-color: var(--background);
+}
+
+.footer__container {
+    width: min(100% - 48px, var(--max-width));
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.footer__container:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.footer__description {
+    margin: 0;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+
+/* ========================================
+   SOCIAL
+======================================== */
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer__social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    font-size: 18px;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.footer__social a:hover {
+    background-color: var(--background);
+    border-color: var(--text-primary);
+}
+
+
+/* ========================================
+   BOTTOM
+======================================== */
+
+.footer__bottom {
+    border-top: 1px solid var(--border);
+}
+
+.footer__bottom .footer__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer__copyright {
+    margin: 0;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .footer__container {
+        width: min(100% - 32px, var(--max-width));
+    }
+
+    .footer__container:first-child {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 24px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .footer__bottom .footer__container {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+}

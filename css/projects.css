@@ -92,14 +92,14 @@
 
 .projects__content {
     display: grid;
-    grid-template-columns: repeat(2, 420px);
+    grid-template-columns: repeat(3, 320px);
     justify-content: start;
     gap: 24px;
 }
 
 
 .projects__card {
-    width: 420px;
+    width: 320px;
     overflow: hidden;
 
     background-color: var(--surface);
