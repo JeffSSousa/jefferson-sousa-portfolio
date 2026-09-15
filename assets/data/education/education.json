@@ -4,10 +4,21 @@
         "institution": "Faculdade Impacta Tecnologia",
         "course": "Sistemas de Informação",
         "degree": "Bacharelado",
-        "startDate": "2024",
-        "endDate": "2027",
+        "startDate": "2025",
+        "endDate": "2028",
         "status": "Em andamento",
-        "logo": "assets/images/educations/certifications/AWS-CLF-02.png",
-        "description": "Bacharelado na area de tecnologia evolução em engenharia e arquitetura de sistemas"
-    }
+        "logo": "assets/images/educations/education/impacta.png",
+        "description": "Bacharelado na area de tecnologia com foco na evolução em engenharia e arquitetura de sistemas"
+    },
+    {
+        "id": 2,
+        "institution": "FMU - Centro Universitário das Faculdades Metropolitanas Unidas",
+        "course": "Análise e Desenvolvimento de Sistemas",
+        "degree": "Tecnólogo",
+        "startDate": "2022",
+        "endDate": "2024",
+        "status": "Concluído",
+        "logo": "assets/images/educations/education/fmu.jpg",
+        "description": "Tecnólogo focado na preparação de profissionais para atuação com análise e desenvolvimento."
+    }    
 ]

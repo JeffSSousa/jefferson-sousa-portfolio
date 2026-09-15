@@ -3,9 +3,9 @@
         "id": 1,
         "name": "AWS Certified Cloud Practitioner",
         "institution": "Amazon Web Services",
-        "date": "2026",
+        "date": "11/2026",
         "logo": "assets/images/educations/certifications/AWS-CLF-02.png",
-        "credential": "12151515",
+        "credential": null,
         "link": "https://www.credly.com/badges/cd352168-22f2-456d-9c5c-9071949324bb/public_url"
     }
 ]

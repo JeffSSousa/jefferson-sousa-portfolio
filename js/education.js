@@ -628,7 +628,7 @@ function renderCertifications() {
 
 
             link.textContent =
-                "Ver certificação";
+                "Exibir Credencial";
 
 
             content.appendChild(

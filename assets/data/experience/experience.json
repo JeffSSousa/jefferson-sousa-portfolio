@@ -2,20 +2,29 @@
     {
         "id": 1,
         "company": "Freelancer",
-        "role": "Desenvolvedor Backend Java",
+        "role": "Desenvolvedor Web Java",
         "startDate": "01/2026",
         "endDate": "Atual",
         "description": "Desenvolvimento de sistemas backend utilizando Java e Spring Boot, com foco em regras de negócio, APIs REST e organização arquitetural.",
         "activities": [
             "Desenvolvimento de APIs REST com Spring Boot",
-            "Modelagem e integração com banco de dados",
+            "Modelagem e integração com bancos de dados",
             "Implementação de regras de negócio",
-            "Aplicação de boas práticas de desenvolvimento e arquitetura"
+            "Aplicação de boas práticas de desenvolvimento e arquitetura",
+            "Desenvolvimento de portfólios e interfaces web com HTML, CSS e JavaScript"
         ],
         "technologies": [
             "Java",
             "Spring Boot",
-            "PostgreSQL"
+            "Spring Security",
+            "PostgreSQL",
+            "MySQL",
+            "Docker",
+            "GitHub Actions",
+            "CI/CD",
+            "HTML",
+            "CSS",
+            "JavaScript"
         ]
     },
     {
@@ -24,16 +33,21 @@
         "role": "Desenvolvedor Java",
         "startDate": "11/2025",
         "endDate": "11/2025",
-        "description": "Desenvolvimento de soluções utilizando Java e Spring Boot integradas a serviços e ferramentas externas.",
+        "description": "Desenvolvimento de soluções em Java integradas a APIs e serviços externos, atuando na construção e integração de sistemas.",
         "activities": [
-            "Desenvolvimento de aplicações com Java e Spring Boot",
-            "Integração com APIs externas",
+            "Desenvolvimento de aplicações utilizando Java e Spring Boot",
+            "Desenvolvimento e manutenção de aplicações Java EE",
+            "Integração com APIs e serviços externos",
             "Integração com WhatsApp através da Meta API",
-            "Utilização de bancos de dados relacionais e NoSQL"
+            "Desenvolvimento de integrações utilizando n8n",
+            "Integração com a plataforma Chatwoot",
+            "Trabalho com bancos de dados relacionais e NoSQL"
         ],
         "technologies": [
             "Java",
+            "Java EE",
             "Spring Boot",
+            "WildFly",
             "PostgreSQL",
             "MongoDB",
             "Meta API",
@@ -47,12 +61,13 @@
         "role": "Desenvolvedor Java & WordPress",
         "startDate": "09/2024",
         "endDate": "Atual",
-        "description": "Desenvolvimento de soluções web e automações utilizando Java, WordPress e diferentes tecnologias de banco de dados.",
+        "description": "Desenvolvimento de soluções web, automações e sistemas personalizados utilizando Java, Spring Boot e WordPress.",
         "activities": [
-            "Desenvolvimento e manutenção de aplicações web",
+            "Desenvolvimento de aplicações web e sistemas personalizados",
             "Desenvolvimento de automações utilizando Java",
-            "Desenvolvimento de soluções com Spring Boot",
-            "Desenvolvimento e manutenção de lojas virtuais em WordPress"
+            "Desenvolvimento de APIs e soluções backend com Spring Boot",
+            "Desenvolvimento e manutenção de lojas virtuais em WordPress",
+            "Integração de aplicações com bancos de dados relacionais e NoSQL"
         ],
         "technologies": [
             "Java",
@@ -68,13 +83,24 @@
         "role": "Analista de Logística",
         "startDate": "07/2021",
         "endDate": "01/2025",
-        "description": "Atuação na área de logística com foco em controle operacional, organização de processos e análise de informações.",
+        "description": "Atuação na área de logística com foco em análise de processos, gestão de indicadores, dados operacionais e planejamento, utilizando ferramentas de BI e sistemas de gestão empresarial.",
         "activities": [
-            "Acompanhamento de operações logísticas",
-            "Controle de processos e indicadores",
-            "Organização e análise de informações operacionais",
-            "Suporte à tomada de decisões"
+            "Acompanhamento e análise de operações logísticas e fluxo de materiais",
+            "Criação e acompanhamento de dashboards e KPIs operacionais",
+            "Análise de dados para identificação de desvios e oportunidades de melhoria",
+            "Utilização de Power BI para análise e visualização de indicadores",
+            "Consulta e análise de dados utilizando SQL Server",
+            "Utilização de WMS e ERP TOTVS Protheus para controle e acompanhamento das operações",
+            "Acompanhamento de indicadores relacionados ao processo de S&OP",
+            "Suporte à tomada de decisões com base em dados e indicadores"
         ],
-        "technologies": []
+        "technologies": [
+            "Excel",
+            "Power BI",
+            "SQL Server",
+            "WMS",
+            "TOTVS Protheus",
+            "S&OP"
+        ]
     }
 ]

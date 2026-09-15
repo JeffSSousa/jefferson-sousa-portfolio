@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Fluxo",
-        "cover": "assets/images/projects/fluxo.jpeg",
+        "cover": "assets/images/projects/fluxo.png",
         "categoryIds": [1],
         "shortDescription": "Plataforma de gerenciamento financeiro pessoal desenvolvida com Java e Spring Boot, com foco em segurança, testes e evolução arquitetural.",
         "problem": "Facilitar a organização e o controle das finanças pessoais, centralizando receitas, despesas, transações e indicadores financeiros em uma única aplicação.",
@@ -38,7 +38,7 @@
     {
         "id": 2,
         "name": "SmartStock",
-        "cover": "assets/images/projects/smartstock.jpeg",
+        "cover": "assets/images/projects/smartstock.png",
         "categoryIds": [1],
         "shortDescription": "API REST para gerenciamento de estoque, desenvolvida com Java e Spring Boot, com foco em rastreabilidade e controle operacional.",
         "problem": "Centralizar o controle de estoque e reduzir erros operacionais relacionados ao gerenciamento de produtos, posições físicas e movimentações.",
@@ -72,7 +72,7 @@
     {
         "id": 3,
         "name": "Order Management System",
-        "cover": "assets/images/projects/order-management.jpeg",
+        "cover": "assets/images/projects/order-management.png",
         "categoryIds": [1, 3],
         "shortDescription": "Sistema de gerenciamento de pedidos baseado em microsserviços e arquitetura orientada a eventos.",
         "problem": "Explorar a construção de uma arquitetura distribuída para processamento de pedidos utilizando comunicação assíncrona e eventos de negócio.",
@@ -107,7 +107,7 @@
     {
         "id": 4,
         "name": "Doctors Appointment",
-        "cover": "assets/images/projects/doctors-appointment.jpeg",
+        "cover": "assets/images/projects/doctors-appointment.png",
         "categoryIds": [1],
         "shortDescription": "API REST para gerenciamento de consultas médicas, com autenticação, autorização e validação de regras de negócio.",
         "problem": "Organizar o cadastro de médicos, pacientes e consultas, garantindo integridade dos agendamentos e evitando conflitos de horários.",

@@ -1,11 +1,52 @@
 [
     {
         "id": 1,
-        "name": "Nome do curso",
+        "name": "Linguagem de Programação Java - Avançado",
+        "institution": "Fundação Bradesco",
+        "completionDate": "08/2023",
+        "logo": "assets/images/educations/courses/fundacao-bradesco.png",
+        "description": "Aprofundamento em Java, programação orientada a objetos, lógica de programação e desenvolvimento de interfaces com JavaFX.",
+        "technologies": [
+            "Java",
+            "Lógica de Programação",
+            "POO",
+            "Interfaces",
+            "JavaFX"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Java Completo: Programação Orientada a Objetos",
         "institution": "Udemy",
-        "completionDate": "2026",
-        "logo": "assets/images/educations/certifications/AWS-CLF-02.png",
-        "description": "",
-        "technologies": ["Java","Spring boot"]
+        "completionDate": "10/2025",
+        "logo": "assets/images/educations/courses/udemy.png",
+        "description": "Formação abrangente em Java, abordando programação orientada a objetos, desenvolvimento web com Spring e integração com diferentes bancos de dados.",
+        "technologies": [
+            "Java",
+            "POO",
+            "Spring Boot",
+            "Spring Data JPA",
+            "Spring MVC",
+            "Lambda",
+            "JDBC",
+            "MySQL",
+            "MongoDB",
+            "PostgreSQL",
+            "MVC"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Bootcamp Universia & Santander - IA Generativa",
+        "institution": "DIO",
+        "completionDate": "10/2025",
+        "logo": "assets/images/educations/courses/dio.png",
+        "description": "Bootcamp focado em inteligência artificial generativa, engenharia de prompts e aplicação de modelos de linguagem e agentes de IA no contexto corporativo.",
+        "technologies": [
+            "LLMs",
+            "IA Generativa",
+            "Engenharia de Prompt",
+            "Agentes de IA"
+        ]
     }
 ]
