@@ -130,7 +130,7 @@ function renderSkills(categoryId) {
 
         const icon = document.createElement("img");
 
-        icon.src = `/assets/icons/skills/${skill.icon}.svg`;
+        icon.src = `assets/icons/skills/${skill.icon}.svg`;
 
         icon.alt = `${skill.name} logo`;
 
