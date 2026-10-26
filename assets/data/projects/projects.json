@@ -1,6 +1,31 @@
 [
+
+    
     {
         "id": 1,
+        "name": "ERP de Impressão 3D",
+        "cover": "assets/images/projects/erp-3d.png",
+        "categoryIds": [1,2],
+        "shortDescription": "Sistema de gestão para impressão 3D desenvolvido com Java, Spring Boot e Angular, com foco em gerenciamento operacional, segurança, arquitetura modular e implantação em nuvem. Por se tratar de um projeto real em produção, o acesso público à aplicação e a disponibilização do código-fonte são restritos para preservar a segurança e a integridade do ambiente. Em breve, será publicado um vídeo no YouTube demonstrando seu funcionamento.",
+        "problem": "Centralizar o gerenciamento das operações de um negócio de impressão 3D, facilitando o controle de cadastros, produção, materiais e estoque em uma única aplicação, com estrutura preparada para a evolução gradual do sistema.",
+        "solution": "Desenvolvimento de uma aplicação web com backend REST em Java e Spring Boot e frontend em Angular. O backend utiliza arquitetura monolítica modular, com organização por funcionalidades (Package-by-Feature), autenticação e autorização com Spring Security e JWT, versionamento de banco com Flyway e validação de dados. A aplicação está implantada em nuvem, com backend conteinerizado em Docker no Render, frontend no Cloudflare Pages e banco PostgreSQL no Neon, priorizando baixo custo operacional e evolução futura da infraestrutura.",
+        "technologies": [
+            "Java 21",
+            "Spring Boot",
+            "Spring Security",
+            "JWT",
+            "Angular",
+            "TypeScript",
+            "PostgreSQL",
+            "Flyway",
+            "Docker",
+            "Maven",
+            "AWS (objetivo de evolução)"
+        ]
+    },
+
+    {
+        "id": 2,
         "name": "Fluxo",
         "cover": "assets/images/projects/fluxo.png",
         "categoryIds": [1],
@@ -36,7 +61,7 @@
         "demo": null
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "SmartStock",
         "cover": "assets/images/projects/smartstock.png",
         "categoryIds": [1],
@@ -70,7 +95,7 @@
         "demo": null
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "Order Management System",
         "cover": "assets/images/projects/order-management.png",
         "categoryIds": [1, 3],
@@ -105,7 +130,7 @@
     },
 
     {
-        "id": 4,
+        "id": 5,
         "name": "Doctors Appointment",
         "cover": "assets/images/projects/doctors-appointment.png",
         "categoryIds": [1],
