@@ -4,10 +4,10 @@
         
     {
         "id": 1,
-        "name": "Printer 3D Manager - ERP",
+        "name": "3D Print Manager",
         "cover": "assets/images/projects/erp-3d.png",
         "categoryIds": [1],
-        "shortDescription": "Sistema de gestão para impressão 3D desenvolvido com Java, Spring Boot e Angular, com foco em produção, estoque, segurança e arquitetura modular.",
+        "shortDescription": "ERP de gestão para impressão 3D desenvolvido com Java, Spring Boot e Angular, com foco em produção, estoque e vendas.",
         "problem": "Acesso restrito: este projeto está em produção e, para preservar a segurança e a integridade do ambiente, não possui acesso público disponível. Uma demonstração do funcionamento será publicada futuramente no YouTube. O sistema foi desenvolvido para gerenciar as operações de um negócio de impressão 3D, centralizando cadastros, materiais, equipamentos, produção e estoque em uma única aplicação.",
         "solution": "Desenvolvimento de uma aplicação web composta por uma API REST em Java e Spring Boot e uma interface em Angular, permitindo centralizar operações relacionadas aos cadastros e ao processo produtivo. O sistema utiliza autenticação e autorização, persistência relacional e controle de versão do banco de dados. A aplicação está implantada em nuvem, com infraestrutura baseada em serviços gratuitos para reduzir os custos iniciais de operação.",
         "technologies": [
