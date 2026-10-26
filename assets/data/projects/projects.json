@@ -1,27 +1,51 @@
 [
 
     
+        
     {
         "id": 1,
-        "name": "ERP de Impressão 3D",
+        "name": "Printer 3D Manager - ERP",
         "cover": "assets/images/projects/erp-3d.png",
-        "categoryIds": [1,2],
-        "shortDescription": "Sistema de gestão para impressão 3D desenvolvido com Java, Spring Boot e Angular, com foco em gerenciamento operacional, segurança, arquitetura modular e implantação em nuvem. Por se tratar de um projeto real em produção, o acesso público à aplicação e a disponibilização do código-fonte são restritos para preservar a segurança e a integridade do ambiente. Em breve, será publicado um vídeo no YouTube demonstrando seu funcionamento.",
-        "problem": "Centralizar o gerenciamento das operações de um negócio de impressão 3D, facilitando o controle de cadastros, produção, materiais e estoque em uma única aplicação, com estrutura preparada para a evolução gradual do sistema.",
-        "solution": "Desenvolvimento de uma aplicação web com backend REST em Java e Spring Boot e frontend em Angular. O backend utiliza arquitetura monolítica modular, com organização por funcionalidades (Package-by-Feature), autenticação e autorização com Spring Security e JWT, versionamento de banco com Flyway e validação de dados. A aplicação está implantada em nuvem, com backend conteinerizado em Docker no Render, frontend no Cloudflare Pages e banco PostgreSQL no Neon, priorizando baixo custo operacional e evolução futura da infraestrutura.",
+        "categoryIds": [1],
+        "shortDescription": "Sistema de gestão para impressão 3D desenvolvido com Java, Spring Boot e Angular, com foco em produção, estoque, segurança e arquitetura modular.",
+        "problem": "Acesso restrito: este projeto está em produção e, para preservar a segurança e a integridade do ambiente, não possui acesso público disponível. Uma demonstração do funcionamento será publicada futuramente no YouTube. O sistema foi desenvolvido para gerenciar as operações de um negócio de impressão 3D, centralizando cadastros, materiais, equipamentos, produção e estoque em uma única aplicação.",
+        "solution": "Desenvolvimento de uma aplicação web composta por uma API REST em Java e Spring Boot e uma interface em Angular, permitindo centralizar operações relacionadas aos cadastros e ao processo produtivo. O sistema utiliza autenticação e autorização, persistência relacional e controle de versão do banco de dados. A aplicação está implantada em nuvem, com infraestrutura baseada em serviços gratuitos para reduzir os custos iniciais de operação.",
         "technologies": [
             "Java 21",
             "Spring Boot",
             "Spring Security",
-            "JWT",
             "Angular",
-            "TypeScript",
             "PostgreSQL",
-            "Flyway",
-            "Docker",
-            "Maven",
-            "AWS (objetivo de evolução)"
-        ]
+            "Docker"
+        ],
+        "architecture": "Aplicação estruturada como um monólito modular (Modular Monolith), com organização baseada em funcionalidades de negócio (Package-by-Feature). O backend separa os módulos e suas responsabilidades dentro de uma única aplicação, enquanto o frontend Angular adota uma organização semelhante por funcionalidades. Essa estrutura favorece a manutenção, reduz o acoplamento entre responsabilidades e permite avaliar futuras evoluções arquiteturais conforme as necessidades do sistema.",
+        "decisions": [
+            "Adoção de uma arquitetura monolítica modular para manter a simplicidade operacional sem abrir mão da separação de responsabilidades",
+            "Organização do backend por funcionalidades de negócio utilizando Package-by-Feature",
+            "Organização do frontend Angular por funcionalidades e componentes para facilitar manutenção e evolução",
+            "Implementação de autenticação e autorização utilizando Spring Security e JWT",
+            "Configuração de CORS para restringir as origens autorizadas a acessar a API",
+            "Configuração de proteção CSRF conforme a estratégia de segurança adotada pela aplicação",
+            "Utilização de Bean Validation para validar os dados recebidos pela API",
+            "Utilização de Flyway para versionamento e gerenciamento das alterações do banco de dados",
+            "Utilização de MapStruct e Lombok para reduzir código repetitivo e facilitar a manutenção",
+            "Conteinerização do backend com Docker para padronizar o empacotamento e a execução da aplicação",
+            "Escolha do Render, Neon e Cloudflare Pages para disponibilizar o sistema em produção com baixo custo inicial",
+            "Direcionamento da infraestrutura para a região de Ohio nos serviços que permitem essa configuração, buscando reduzir a latência entre os componentes"
+        ],
+        "challenges": [
+            "Modelar as entidades e os relacionamentos necessários para representar os cadastros e o processo produtivo de impressão 3D",
+            "Organizar as funcionalidades em módulos com responsabilidades bem definidas dentro de um monólito",
+            "Implementar autenticação e autorização para proteger os endpoints da API",
+            "Integrar o frontend Angular ao backend, tratando erros retornados pela API e mantendo o fluxo de operação consistente",
+            "Controlar as operações de produção e seus efeitos sobre o estoque e as movimentações de materiais",
+            "Preparar o banco de dados para evoluir de maneira controlada por meio de migrações versionadas",
+            "Publicar o sistema em produção utilizando serviços gratuitos, equilibrando custo, disponibilidade e manutenção",
+            "Padronizar a execução do backend por meio de Docker e configurar a comunicação segura entre frontend e API"
+        ],
+        "result": "Aplicação web full stack em produção para gerenciamento de operações de impressão 3D, com backend Java e Spring Boot, frontend Angular, banco PostgreSQL e infraestrutura conteinerizada. O projeto reúne práticas de arquitetura modular, segurança, versionamento de banco e implantação em nuvem, oferecendo uma base para a evolução gradual do sistema. Por se tratar de um ambiente real de produção, o código-fonte e o acesso público à aplicação são restritos. Uma demonstração do funcionamento será publicada futuramente no YouTube.",
+        "github": null,
+        "demo": null
     },
 
     {
